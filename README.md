@@ -2,9 +2,9 @@
 
 ## 1)Training Models-
 ### i)ru_en.ipynb-
-Purpose and function of ru_en.ipynb is to train the model to translate Russian sentences into English using the wmt16 and hugging face datasets. We train this model on some sets of Russian-English sentences so that it will be able to translate Russian sentences into English with the help of this training. So, we call this model to translate Russian to English.
+Purpose and function of ru_en.ipynb is to train the model to translate Russian sentences into English using the wmt16 and hugging face datasets. We train this model on some set of Russian-English sentences so that it will be able to translate Russian sentences into English with the help of this training. So, we call this model to translate Russian to English.
 ### ii)tr_en.ipynb-
-Purpose and function of tr_en.ipynb is to train the model to translate Turkish sentences into English using the wmt16 and hugging face datasets. So, we call this model to translate Turkish to English.
+Purpose and function of tr_en.ipynb is to train the model to translate Turkish sentences into English using the wmt16 and hugging face datasets. We train this model on some set of Turkish-English sentences so that it will be able to translate Turkish sentences into English with the help of this training. So, we call this model when we need to translate Turkish to English.
 
 ## 2)Generating Model Files-
 To generate the model files that are to be used during translation, we must run and train the two training model codes, i.e, ru_en.ipynb and tr_en.ipynb.
