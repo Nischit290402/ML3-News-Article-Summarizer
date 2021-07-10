@@ -1,5 +1,5 @@
 # ML3-News-Article-Summarizer
-## IITI SoC
+# IITI SoC
 ## 1)Training Models-
 ### i)ru_en.ipynb-
 Purpose and function of ru_en.ipynb is to train the model to translate Russian sentences into English using the wmt16 and hugging face datasets. We train this model on some set of Russian-English sentences so that it will be able to translate Russian sentences into English with the help of this training. So, we call this model to translate Russian to English.
