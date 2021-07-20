@@ -1,18 +1,31 @@
 # ML3-News-Article-Summarizer
 # IITI SoC'21
-## TASK-1 : ru_en.ipynb- 
-### Purpose and function of this- 
-is to train the model to translate Russian sentences into English using the wmt16 and hugging face datasets.
-We train this model on some set of Russian-English sentences so that it will be able to translate Russian sentences into English with the help of this training. So, we call this model to translate Russian to English.
-### ii)tr_en.ipynb-
-Purpose and function of tr_en.ipynb is to train the model to translate Turkish sentences into English using the wmt16 and hugging face datasets. We train this model on some set of Turkish-English sentences so that it will be able to translate Turkish sentences into English with the help of this training. So, we call this model when we need to translate Turkish to English.
+## TASK-1 : tr_en.ipynb- 
+#### Purpose and function of tr_en.ipynb- 
+Its purpose is to train the model to translate Turkish sentences into English using the wmt16 dataset and "Helsinki-NLP/opus-mt-tr-en" (huggingface) model. We trained this model on a set of Turkish-English sentences so that it will be able to translate Turkish sentences into English with the help of this training. We use this model to translate the input Turkish articles into English.
 
-## 2)Generating Model Files-
+## TASK-2 : ru_en.ipynb- 
+#### Purpose and function of ru_en.ipynb- 
+Its purpose is to train the model to translate Russian sentences into English using the wmt16 dataset and "Helsinki-NLP/opus-mt-ru-en" (huggingface) model. We trained this model on a set of Russian-English sentences so that it will be able to translate Russian sentences into English with the help of this training. We use this model to translate the input Russian articles into English.
+
+### Generating Model Files for the Translation part-
 To generate the model files that are to be used during translation, we must run and train the two training model codes, i.e, ru_en.ipynb and tr_en.ipynb.
 
-## 3)Translation Code-
-### translation.ipynb - 
-The purpose of this file is to produce translated output of the input as a string and store it. It first identifies the language and then breaks down paragraphs into sentences. If the sentence has more than 512 characters, it would break it into parts with less than 512 characters. After splitting into sentences with parts having less than 512 characters, we translate the given language into English using the model files generated and then join all the sentences to form a paragraph. The output is stored as a string in a certain variable to be used for further processing.
+## TASK-3 : summary.ipynb
+#### Purpose and function of summary.ipynb-
+This colab file is used to train the model to summarize a given English article. It is trained using the "cnn_dailymail" dataset and "facebook/bart-base" model. We will use this model to summarize the output obtained after the translation part.
+
+### Generating Model Files for the Summarization part-
+To generate the model files that are to be used during summarization, we must run and train the training model code - summary.ipynb.
+
+## TASK-4 : heading.ipynb
+#### Purpose and function of heading.ipynb-
+This colab file is used to train the model to set up a heading for a given English article. It is trained using "articles1.csv" dataset from the kaggle site and "t5-base" model. This model is used to create a heading for the output article from the translation part.
+
+### Generating Model Files for the Heading Generation part-
+To generate the model files that are to be used for generating the heading, we must run and train the training model code - heading.ipynb.
+
+## TASK-5 : final_output.ipynb
 
 ## Team Members-
 1) Snehith Chinta
