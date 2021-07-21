@@ -37,10 +37,22 @@ To generate the model files that are to be used for generating the heading, we m
 
 ## TASK-5 : final_output.ipynb
 
-This is where the entire project comes together. 
+This is where the entire project comes together. Talking about the code,
+
+First, it checks the language of the input article and translate it if it is either Russian or English using the generated model files. If it any other language other than English, Russian or Turkish, the program returns "Unsupportable". It break the input article into sentences or parts with less than 512 characters. These are individually passed into the translator and later, combined together using fullstops, to form a paragraph which is in English.
+
+Then, the translated paragraph is summarized. The translated paragraph is broken down into a sets of 5 sentences and sent into the summarizer. The summarized part is finally joined together to get the summarized output.
+
+Next, the translated paragraph is passed through the headline generator to generate a suitable heading for the article.
+
+A pre-trained question-answering model is used to provide answers to the questions asked by the users. For better efficiency of the answers, the "bert-large-uncased-whole-word-masking-finetuned-squad" model is being used. It asks the users if he/she has any questions related to the article and takes in the questions. With the help of the pre-trained model, it generates the answers.
 
 ## Team Members-
 1) Snehith Chinta
 2) Sharvani Kothuru
 3) Shivani Rajaputhra
 4) Siddartha Chennareddy
+
+## Mentors-
+1) Aryan Rastogi
+2) Vardhan Paliwal
