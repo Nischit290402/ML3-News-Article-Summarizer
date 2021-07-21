@@ -1,5 +1,15 @@
 # ML3-News-Article-Summarizer
 # IITI SoC'21
+
+## Structure of the project-
+
+The Entire code in divided into 5 tasks.
+
+1) Task-1 and Task-2 : Translation of the input news article
+2) Task-3 : Summarization of the translated article
+3) Task-4 : Generating a heading to the summarized article
+4) Task-5 : A code, consisting of all the generated model files, which inputs a news article from the user and gives the user the summarized news article along with a heading. It also contains a pre-trained model that is used to answer the questions asked by the user, related to the article.
+
 ## TASK-1 : tr_en.ipynb- 
 #### Purpose and function of tr_en.ipynb- 
 Its purpose is to train the model to translate Turkish sentences into English using the wmt16 dataset and "Helsinki-NLP/opus-mt-tr-en" (huggingface) model. We trained this model on a set of Turkish-English sentences so that it will be able to translate Turkish sentences into English with the help of this training. We use this model to translate the input Turkish articles into English.
@@ -26,6 +36,8 @@ This colab file is used to train the model to set up a heading for a given Engli
 To generate the model files that are to be used for generating the heading, we must run and train the training model code - heading.ipynb.
 
 ## TASK-5 : final_output.ipynb
+
+This is where the entire project comes together. 
 
 ## Team Members-
 1) Snehith Chinta
