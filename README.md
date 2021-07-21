@@ -10,9 +10,9 @@ The Entire code in divided into 5 tasks.
 3) Task-4 : Generating a heading to the summarized article
 4) Task-5 : 
 
-   Part A- A code, consisting of all the generated model files, which inputs a news article from the user and gives the user the summarized news article along with a heading.    
+   i)Part A- A code, consisting of all the generated model files, which inputs a news article from the user and gives the user the summarized news article along with a heading.    
    
-   Part B- The code also contains a pre-trained model that is used to answer the questions asked by the user, related to the article.
+   ii)Part B- The code also contains a pre-trained model that is used to answer the questions asked by the user, related to the article.
 
 ## TASK-1 : tr_en.ipynb- 
 #### Purpose and function of tr_en.ipynb- 
