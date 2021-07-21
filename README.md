@@ -8,7 +8,8 @@ The Entire code in divided into 5 tasks.
 1) Task-1 and Task-2 : Translation of the input news article
 2) Task-3 : Summarization of the translated article
 3) Task-4 : Generating a heading to the summarized article
-4) Task-5 : A code, consisting of all the generated model files, which inputs a news article from the user and gives the user the summarized news article along with a heading. It also contains a pre-trained model that is used to answer the questions asked by the user, related to the article.
+4) Task-5 : 
+   Part A- A code, consisting of all the generated model files, which inputs a news article from the user and gives the user the summarized news article along with a heading.    Part B- The code also contains a pre-trained model that is used to answer the questions asked by the user, related to the article.
 
 ## TASK-1 : tr_en.ipynb- 
 #### Purpose and function of tr_en.ipynb- 
@@ -39,11 +40,15 @@ To generate the model files that are to be used for generating the heading, we m
 
 This is where the entire project comes together. Talking about the code,
 
+#### Part A:- Translation, Summarization and Heading Generation code
+
 First, it checks the language of the input article and translate it into English, if it is either Russian or Turkish using the generated model files. If it any other language other than English, Russian or Turkish, the program returns "Unsupportable". It break the input article into sentences or parts with less than 512 characters. These are individually passed into the translator and later, combined together using fullstops, to form a paragraph which is in English.
 
 Then, the translated paragraph is summarized. The translated paragraph is broken down into a sets of 5 sentences and sent into the summarizer. The summarized part is finally joined together to get the summarized output.
 
 Next, the translated paragraph is passed through the headline generator to generate a suitable heading for the article.
+
+#### Part B:- Question answering code
 
 A pre-trained question-answering model is used to provide answers to the questions asked by the users. For better efficiency of the answers, the "bert-large-uncased-whole-word-masking-finetuned-squad" model is being used. It asks the users if he/she has any questions related to the article and takes in the questions. With the help of the pre-trained model, it generates the answers.
 
