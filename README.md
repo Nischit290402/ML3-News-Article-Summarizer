@@ -39,7 +39,7 @@ To generate the model files that are to be used for generating the heading, we m
 
 This is where the entire project comes together. Talking about the code,
 
-First, it checks the language of the input article and translate it if it is either Russian or English using the generated model files. If it any other language other than English, Russian or Turkish, the program returns "Unsupportable". It break the input article into sentences or parts with less than 512 characters. These are individually passed into the translator and later, combined together using fullstops, to form a paragraph which is in English.
+First, it checks the language of the input article and translate it into English, if it is either Russian or Turkish using the generated model files. If it any other language other than English, Russian or Turkish, the program returns "Unsupportable". It break the input article into sentences or parts with less than 512 characters. These are individually passed into the translator and later, combined together using fullstops, to form a paragraph which is in English.
 
 Then, the translated paragraph is summarized. The translated paragraph is broken down into a sets of 5 sentences and sent into the summarizer. The summarized part is finally joined together to get the summarized output.
 
