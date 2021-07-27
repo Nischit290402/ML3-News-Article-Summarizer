@@ -92,7 +92,7 @@ F1 Score- 86.9
 
 Gives a less detailed answer as compared to the first two models. However, the output is comparable to that of the first two models.
 
-### The “bert-large-uncased-whole-word-masking-finetuned-squad” and the “csarron/bert-base-uncased-squad-v1” models are better for question- answering. In some cases, the first model is more appropriate and in some other, the second ones gives more accurate results.
+#### The “bert-large-uncased-whole-word-masking-finetuned-squad” and the “csarron/bert-base-uncased-squad-v1” models are better for question- answering. In some cases, the first model is more appropriate and in some other, the second ones gives more accurate results.
 
 
 ## Team Members-
