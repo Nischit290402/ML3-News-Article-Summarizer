@@ -18,9 +18,15 @@ The Entire code in divided into 5 tasks.
 #### Purpose and function of tr_en.ipynb- 
 Its purpose is to train the model to translate Turkish sentences into English using the wmt16 dataset and "Helsinki-NLP/opus-mt-tr-en" (huggingface) model. We trained this model on a set of Turkish-English sentences so that it will be able to translate Turkish sentences into English with the help of this training. We use this model to translate the input Turkish articles into English.
 
+#### Accuracy-
+The Training accuracy stood at 99% whereas Validation accuracy stood at 98.3%.
+
 ## TASK-2 : ru_en.ipynb- 
 #### Purpose and function of ru_en.ipynb- 
 Its purpose is to train the model to translate Russian sentences into English using the wmt16 dataset and "Helsinki-NLP/opus-mt-ru-en" (huggingface) model. We trained this model on a set of Russian-English sentences so that it will be able to translate Russian sentences into English with the help of this training. We use this model to translate the input Russian articles into English.
+
+#### Accuracy-
+The Training accuracy stood at 97.8% whereas Validation accuracy stood at 98.5%.
 
 ### Generating Model Files for the Translation part-
 To generate the model files that are to be used during translation, we must run and train the two training model codes, i.e, ru_en.ipynb and tr_en.ipynb.
@@ -29,12 +35,18 @@ To generate the model files that are to be used during translation, we must run 
 #### Purpose and function of summary.ipynb-
 This colab file is used to train the model to summarize a given English article. It is trained using the "cnn_dailymail" dataset and "facebook/bart-base" model. We will use this model to summarize the output obtained after the translation part.
 
+#### Accuracy-
+The Training accuracy stood at 97.8%.
+
 ### Generating Model Files for the Summarization part-
 To generate the model files that are to be used during summarization, we must run and train the training model code - summary.ipynb.
 
 ## TASK-4 : heading.ipynb
 #### Purpose and function of heading.ipynb-
 This colab file is used to train the model to set up a heading for a given English article. It is trained using "articles1.csv" dataset from the kaggle site and "t5-base" model. This model is used to create a heading for the output article from the translation part.
+
+#### Accuracy-
+There is no training loss for this model.
 
 ### Generating Model Files for the Heading Generation part-
 To generate the model files that are to be used for generating the heading, we must run and train the training model code - heading.ipynb.
