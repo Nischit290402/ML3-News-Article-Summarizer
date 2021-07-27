@@ -39,7 +39,7 @@ This colab file is used to train the model to set up a heading for a given Engli
 ### Generating Model Files for the Heading Generation part-
 To generate the model files that are to be used for generating the heading, we must run and train the training model code - heading.ipynb.
 
-### Similarity score-
+### Similarity score- (similarity_scores.ipynb)
 On comparing the output of the trained heading generation model with 20 examples of the "articles1.csv", the similarity score stands out to be 66.66%.
 
 ## TASK-5 : final_output.ipynb
