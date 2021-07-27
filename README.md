@@ -58,6 +58,43 @@ Next, the translated paragraph is passed through the headline generator to gener
 
 A pre-trained question-answering model is used to provide answers to the questions asked by the users. For better efficiency of the answers, the "bert-large-uncased-whole-word-masking-finetuned-squad" model is being used. It asks the users if he/she has any questions related to the article and takes in the questions. With the help of the pre-trained model, it generates the answers.
 
+## Comparing different question-answering models-
+
+#### i) bert-large-uncased-whole-word-masking-finetuned-squad :
+
+Dataset-1.34G
+
+F1 Score- 93.15
+
+Gives detailed and exact answers to the questions.In very few cases, it does not answer the question 100% accurately. Mostly, it answers to the point.
+
+#### ii) csarron/bert-base-uncased-squad-v1 :
+
+Dataset-438M
+
+F1 Score- 88.5
+
+Gives detailed and exact answers to the questions.
+Sometimes, it prints out the answers as it is without modifying. (in very few instances)
+
+#### iii) google/bigbird-base-trivia-itc :
+
+Dataset-527M
+
+Gives short, few words answers and some answers are not accurate and helpful. It even prints wrong answers in a few cases. It just matches the words in the questions to the paragraph and prints out the answer without modifying it. (Even prints commas)
+
+
+#### iv) distilbert-base-uncased-distilled-squad :
+
+Dataset-265M
+
+F1 Score- 86.9
+
+Gives a less detailed answer as compared to the first two models. However, the ouput is comparable to that of the first two models.
+
+##### The “bert-large-uncased-whole-word-masking-finetuned-squad” and the “csarron/bert-base-uncased-squad-v1” models are better for question- answering. In some cases, the first model is more appropriate and in some other, the second ones gives more accurate results.
+
+
 ## Team Members-
 1) Snehith Chinta
 2) Sharvani Kothuru
