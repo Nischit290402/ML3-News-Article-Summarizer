@@ -66,7 +66,7 @@ Dataset-1.34G
 
 F1 Score- 93.15
 
-Gives detailed and exact answers to the questions.In very few cases, it does not answer the question 100% accurately. Mostly, it answers to the point.
+Gives detailed and exact answers to the questions. In very few cases, it does not answer the question 100% accurately. Mostly, it answers to the point.
 
 #### ii) csarron/bert-base-uncased-squad-v1 :
 
@@ -75,7 +75,7 @@ Dataset-438M
 F1 Score- 88.5
 
 Gives detailed and exact answers to the questions.
-Sometimes, it prints out the answers as it is without modifying. (in very few instances)
+Sometimes, it prints out the answers as it is, without modifying. (in very few instances)
 
 #### iii) google/bigbird-base-trivia-itc :
 
@@ -90,9 +90,9 @@ Dataset-265M
 
 F1 Score- 86.9
 
-Gives a less detailed answer as compared to the first two models. However, the ouput is comparable to that of the first two models.
+Gives a less detailed answer as compared to the first two models. However, the output is comparable to that of the first two models.
 
-##### The “bert-large-uncased-whole-word-masking-finetuned-squad” and the “csarron/bert-base-uncased-squad-v1” models are better for question- answering. In some cases, the first model is more appropriate and in some other, the second ones gives more accurate results.
+### The “bert-large-uncased-whole-word-masking-finetuned-squad” and the “csarron/bert-base-uncased-squad-v1” models are better for question- answering. In some cases, the first model is more appropriate and in some other, the second ones gives more accurate results.
 
 
 ## Team Members-
