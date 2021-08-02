@@ -86,14 +86,14 @@ Dataset-438M
 
 F1 Score- 88.5
 
-Gives detailed and exact answers to the questions.
-Sometimes, it prints out the answers as it is, without modifying. (in very few instances)
+Gives detailed and exact answers to the questions. Sometimes, we might encounter a few answers.
+Sometimes, it prints out the answers as it is, without modifying (in very few instances).
 
 #### iii) google/bigbird-base-trivia-itc :
 
 Dataset-527M
 
-Gives short, few words answers and some answers are not accurate and helpful. It even prints wrong answers in a few cases. It just matches the words in the questions to the paragraph and prints out the answer without modifying it. (Even prints commas)
+Gives short, few words answers and some answers are not accurate and helpful. It even prints wrong answers in a few cases. It just matches the words in the questions to the paragraph and prints out the answer without modifying it (Even prints commas). It is efficient in the case of one word answers.
 
 
 #### iv) distilbert-base-uncased-distilled-squad :
@@ -102,10 +102,9 @@ Dataset-265M
 
 F1 Score- 86.9
 
-Gives a less detailed answer as compared to the first two models. However, the output is comparable to that of the first two models.
+Gives a less detailed answer as compared to the first two models. However, sometimes, the output is comparable to that of the first two models. Wrong answers might be printed in a few cases.
 
-#### The “bert-large-uncased-whole-word-masking-finetuned-squad” and the “csarron/bert-base-uncased-squad-v1” models are better for question- answering. In some cases, the first model is more appropriate and in some other, the second one gives more accurate results.
-
+#### Mostly, the “bert-large-uncased-whole-word-masking-finetuned-squad” model is better for question- answering. In some cases, "distilbert-base-uncased-distilled-squad" and "csarron/bert-base-uncased-squad-v1" models might be better than the first one.
 
 ## Team Members-
 1) Snehith Chinta
