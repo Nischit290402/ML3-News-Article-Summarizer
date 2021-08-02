@@ -86,7 +86,7 @@ Dataset-438M
 
 F1 Score- 88.5
 
-Gives detailed and exact answers to the questions. Sometimes, we might encounter a few answers.
+Gives detailed and exact answers to the questions. Sometimes, we might encounter a few wrong answers.
 Sometimes, it prints out the answers as it is, without modifying (in very few instances).
 
 #### iii) google/bigbird-base-trivia-itc :
