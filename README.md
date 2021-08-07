@@ -93,6 +93,8 @@ Sometimes, it prints out the answers as it is, without modifying (in very few in
 
 Dataset-527M
 
+F1 Score- 79.5
+
 Gives short, few words answers and some answers are not accurate and helpful. It even prints wrong answers in a few cases. It just matches the words in the questions to the paragraph and prints out the answer without modifying it (Even prints commas). It is efficient in the case of one word answers.
 
 
