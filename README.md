@@ -108,11 +108,7 @@ Gives a less detailed answer as compared to the first two models. However, somet
 
 #### Mostly, the “bert-large-uncased-whole-word-masking-finetuned-squad” model is better for question- answering. In some cases, "distilbert-base-uncased-distilled-squad" and "csarron/bert-base-uncased-squad-v1" models might be better than the first one.
 
-## Team Members-
-1) Snehith Chinta
-2) Sharvani Kothuru
-3) Shivani Rajaputhra
-4) Siddartha Chennareddy
+
 
 ## Mentors-
 1) Aryan Rastogi
